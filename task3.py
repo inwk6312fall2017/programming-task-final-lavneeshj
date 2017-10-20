@@ -12,3 +12,8 @@ def func(file):
 
 file1='running-config.cfg'
 func(file1)
+
+
+dict={}
+
+
