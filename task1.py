@@ -1,16 +1,16 @@
 def longest_word(filename):
     
     with open(filename) as f:
-        linenum = 1
+        
         for line in f:
-            words = line.split()
+            words = line.split('.')
             longest = ''
             for word in words:
                 if len(longest) < len(word):
                     longest = word
-            print("Line", linenum, "has", longest, "as the longest word.")
-            linenum += 1
-            print(longest)
+            print("Line has", longest, "as the longest word.")
+           
+            return(longest)
 
 
 filename1='Book1.txt'
